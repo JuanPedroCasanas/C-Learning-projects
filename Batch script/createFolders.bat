@@ -11,7 +11,7 @@ FOR /L %%x IN (%firstFolder%, 1, %secondFolder%) Do (
     echo int main ^(void^) >> %%x.c
     echo ^{ >> %%x.c
     echo: >> %%x.c
-    echo return 0; >> %%x.c
+    echo    return 0; >> %%x.c
     echo ^} >> %%x.c
     cd ..
 )
